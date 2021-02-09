@@ -11,15 +11,9 @@
     <Loader v-if="loading" />
 
     <div v-else class="row">
-      <HomeBill 
-        :rates="currency.rates"
-      />
-      <HomeCurrency 
-        :rates="currency.rates"
-        :date="currency.date"
-      />
+      <HomeBill :rates="currency.rates" />
+      <HomeCurrency :rates="currency.rates" :date="currency.date" />
     </div>
-
   </div>
 </template>
 
@@ -38,7 +32,8 @@ export default {
     this.loading = false
   },
   components: {
-    HomeBill, HomeCurrency
+    HomeBill,
+    HomeCurrency
   },
   methods: {
     async refresh() {
