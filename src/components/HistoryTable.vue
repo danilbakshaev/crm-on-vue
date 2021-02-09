@@ -22,7 +22,7 @@
       </td>
       <td>
         <button
-          v-tooltip="'Посмотреть запись'"
+          
           class="btn-small btn"
           @click="$router.push(`/detail/${record.id}`)"
         >
