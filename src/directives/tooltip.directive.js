@@ -3,9 +3,9 @@ export default {
     M.Tooltip.init(el, {html: value})
   },
   unbind(el) {
-    const tooltip = M.Tooltip.init(el, {html: value})
+    const tooltip = M.Tooltip.getInstance(el)
 
-    if (tooltip && tooltop.destroy) {
+    if (tooltip && tooltip.destroy) {
       tooltip.destroy()      
     }
   }
