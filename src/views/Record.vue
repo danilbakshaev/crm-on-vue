@@ -6,7 +6,7 @@
 
     <Loader v-if="loading" />
 
-    <p v-else-if="categories.lenght" class="center">Категорий пока нет.<router-link to="/categories">Добавить новую категорию</router-link></p>
+    <p v-else-if="!categories.length" class="center">Категорий пока нет. <router-link to="/categories">Добавить новую категорию</router-link></p>
 
     <form v-else class="form" @submit.prevent="handleSubmit">
       <div class="input-field" >

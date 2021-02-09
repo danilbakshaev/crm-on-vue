@@ -14,7 +14,7 @@
       </main>
 
       <div class="fixed-action-btn">
-        <router-link class="btn-floating btn-large blue" to="/record">
+        <router-link class="btn-floating btn-large blue new-hover" to="/record">
           <i class="large material-icons">add</i>
         </router-link>
       </div>
@@ -43,3 +43,12 @@ export default {
   }
 }
 </script>
+
+<style>
+  .new-hover {
+    transition: all linear 0.2s;
+  }
+  .new-hover:hover {
+    opacity: 0.8
+  }
+</style>
