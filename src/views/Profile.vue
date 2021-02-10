@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>{{ 'ProfileTitle' | localize }}</h3>
+      <h3>{{ 'page-name_profile' | localize }}</h3>
     </div>
 
     <form class="form" @submit.prevent="submitHandler">
@@ -25,7 +25,7 @@
 
       <div class="switch">
         <label>
-          English (не переведено до конца)
+          English
           <input type="checkbox" v-model="isRuLocale" />
           <span class="lever"></span>
           Русский
@@ -46,6 +46,11 @@ import { required } from 'vuelidate/lib/validators'
 import localizeFilter from '@/filters/localize.filter'
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$title('page-name_profile')
+    }
+  },
   data: () => ({
     name: '',
     isRuLocale: true

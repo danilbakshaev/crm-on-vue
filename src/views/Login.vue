@@ -1,7 +1,7 @@
 <template>
   <form class="card auth-card" @submit.prevent="submitHandler">
     <div class="card-content">
-      <span class="card-title">Домашняя бухгалтерия</span>
+      <span class="card-title">{{ 'page-name_login' | localize }}</span>
       <div class="input-field">
         <input
           id="email"
@@ -74,6 +74,11 @@ import messages from '@/utils/messages'
 
 export default {
   name: 'login',
+  metaInfo() {
+    return {
+      title: this.$title('page-name_login')
+    }
+  },
   data: () => ({
     email: '',
     password: ''

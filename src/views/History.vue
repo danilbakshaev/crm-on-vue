@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>История записей</h3>
+      <h3>{{ 'page-name_history' | localize }}</h3>
     </div>
 
     <div class="history-chart">
@@ -35,6 +35,11 @@ import { Pie } from 'vue-chartjs'
 
 export default {
   name: 'history',
+  metaInfo() {
+    return {
+      title: this.$title('page-name_history')
+    }
+  },
   extends: Pie,
   mixins: [paginationMixin],
   data: () => ({

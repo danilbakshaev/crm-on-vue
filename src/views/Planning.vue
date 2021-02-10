@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="page-title">
-      <h3>Планирование</h3>
+      <h3>{{ 'page-name_planning' | localize }}</h3>
       <h4>{{ info.bill | currency('RUB') }}</h4>
     </div>
 
@@ -34,6 +34,11 @@ import currencyFilter from '@/filters/currency.filter'
 
 export default {
   name: 'planning',
+  metaInfo() {
+    return {
+      title: this.$title('page-name_planning')
+    }
+  },
   data: () => ({
     loading: true,
     categories: []

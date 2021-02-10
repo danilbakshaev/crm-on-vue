@@ -5,31 +5,33 @@
         <a href="#" @click.prevent="$emit('click')">
           <i class="material-icons black-text">dehaze</i>
         </a>
-        <span class="black-text">{{date | date('datetime')}}</span>
+        <span class="black-text">{{ date | date('datetime') }}</span>
       </div>
 
       <ul class="right hide-on-small-and-down">
         <li>
           <a
-              class="dropdown-trigger black-text"
-              href="#"
-              data-target="dropdown"
-              ref="dropdown"
+            class="dropdown-trigger black-text"
+            href="#"
+            data-target="dropdown"
+            ref="dropdown"
           >
             {{ name }}
             <i class="material-icons right">arrow_drop_down</i>
           </a>
 
-          <ul id='dropdown' class='dropdown-content'>
+          <ul id="dropdown" class="dropdown-content">
             <li>
               <router-link to="/profile" class="black-text">
-                <i class="material-icons">account_circle</i>Профиль
+                <i class="material-icons">account_circle</i
+                >{{ 'navbar_profile' | localize }}
               </router-link>
             </li>
             <li class="divider" tabindex="-1"></li>
             <li>
               <a href="#" class="black-text" @click.prevent="logout">
-                <i class="material-icons">assignment_return</i>Выйти
+                <i class="material-icons">assignment_return</i
+                >{{ 'navbar_logout' | localize }}
               </a>
             </li>
           </ul>

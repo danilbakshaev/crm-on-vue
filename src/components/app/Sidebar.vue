@@ -20,11 +20,11 @@ export default {
   props: ['value'],
   data: () => ({
     links: [
-      { title: localizeFilter('Menu_Bill'), url: '/', exact: true },
-      { title: localizeFilter('Menu_History'), url: '/history' },
-      { title: localizeFilter('Menu_Planning'), url: '/planning' },
-      { title: localizeFilter('Menu_Record'), url: '/record' },
-      { title: localizeFilter('Menu_Categories'), url: '/categories' }
+      { title: localizeFilter('page-name_bill'), url: '/', exact: true },
+      { title: localizeFilter('page-name_history'), url: '/history' },
+      { title: localizeFilter('page-name_planning'), url: '/planning' },
+      { title: localizeFilter('page-name_record'), url: '/record' },
+      { title: localizeFilter('page-name_categories'), url: '/categories' }
     ]
   })
 }

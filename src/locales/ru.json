@@ -1,12 +1,29 @@
 {
-  "ProfileTitle": "Профиль",
   "Name": "Имя",
   "Message_EnterName": "Введите имя",
   "Update": "Обновить",
-  "Menu_Bill": "Счет",
-  "Menu_History": "История",
-  "Menu_Planning": "Планирование",
-  "Menu_Record": "Новая запись",
-  "Menu_Categories": "Категории",
-  "Message_dataChangedSuccessfully": "Данные успешно изменены"
+
+  "Message_dataChangedSuccessfully": "Данные успешно изменены",
+
+  "navbar_profile": "Профиль",
+  "navbar_logout": "Выйти",
+
+  "page-name_login": "Домашняя бухгалтерия",
+  "page-name_profile": "Профиль",
+  "page-name_bill": "Счет",
+  "page-name_history": "История",
+  "page-name_planning": "Планирование",
+  "page-name_record": "Новая запись",
+  "page-name_categories": "Категории",
+
+  "comp-homebill_card-title": "Счет в валюте",
+  "comp-homecurrency_ex-rates": "Курс валют",
+  "comp-homecurrency_currency": "Валюта",
+  "comp-homecurrency_rates": "Курс",
+  "comp-homecurrency_date": "Дата",
+
+  "categories_button-create": "Создать",
+  "categories_button-update": "Обновить",
+  "categories_new": "Создать",
+  "categories_edit": "Редактировать"
 }

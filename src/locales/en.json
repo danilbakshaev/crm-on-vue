@@ -3,10 +3,28 @@
   "Name": "Name",
   "Message_EnterName": "Enter name",
   "Update": "Update",
-  "Menu_Bill": "Bill",
-  "Menu_History": "History",
-  "Menu_Planning": "Planning",
-  "Menu_Record": "Record",
-  "Menu_Categories": "Categories",
-  "Message_dataChangedSuccessfully": "Data changed successfully"
+
+  "Message_dataChangedSuccessfully": "Data changed successfully",
+
+  "navbar_profile": "Profile",
+  "navbar_logout": "Logout",
+
+  "page-name_login": "Home bookkeeping",
+  "page-name_profile": "Profile",
+  "page-name_bill": "Bill",
+  "page-name_history": "History",
+  "page-name_planning": "Planning",
+  "page-name_record": "Record",
+  "page-name_categories": "Categories",
+
+  "comp-homebill_card-title": "Currency account",
+  "comp-homecurrency_ex-rates": "Exchange rates",
+  "comp-homecurrency_currency": "Currency",
+  "comp-homecurrency_rates": "Rates",
+  "comp-homecurrency_date": "Date",
+
+  "categories_button-create": "Create",
+  "categories_button-update": "Update",
+  "categories_new": "Create",
+  "categories_edit": "Edit"
 }
