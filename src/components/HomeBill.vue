@@ -24,9 +24,7 @@ export default {
   }),
   computed: {
     base() {
-      return (
-        this.$store.getters.info.bill / (this.rates['RUB'] / this.rates['EUR'])
-      )
+      return this.$store.getters.info.bill
     }
   },
   methods: {

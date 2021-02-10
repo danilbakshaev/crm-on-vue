@@ -19,7 +19,7 @@
           <tbody>
             <tr v-for="cur in currencies" :key="cur">
               <td>{{ cur }}</td>
-              <td>{{ rates[cur] }}</td>
+              <td>{{ getCurrency(cur) }}</td>
               <td>{{ date | date('date') }}</td>
             </tr>
           </tbody>
@@ -34,6 +34,11 @@ export default {
   props: ['rates', 'date'],
   data: () => ({
     currencies: ['RUB', 'USD', 'EUR']
-  })
+  }),
+  methods: {
+    getCurrency(currency) {
+      return Math.floor((1 / this.rates[currency]) * 100) / 100
+    }
+  }
 }
 </script>
