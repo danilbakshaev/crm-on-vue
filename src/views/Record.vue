@@ -167,7 +167,8 @@ export default {
         } catch (e) {}
       } else {
         this.$message(
-          `Недостаточно средств на счете (${this.amount - this.info.bill})`
+          `Недостаточно средств на счете. Доступно 
+          ${this.amount - this.info.bill}₽`
         )
       }
     }
