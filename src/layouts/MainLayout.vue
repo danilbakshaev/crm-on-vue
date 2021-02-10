@@ -1,13 +1,12 @@
 <template>
   <div>
-    <Loader v-if="loading"/>
+    <Loader v-if="loading" />
     <div v-else class="app-main-layout">
-      
-      <Navbar @click="isOpen = !isOpen"/>
+      <Navbar @click="isOpen = !isOpen" />
 
-      <Sidebar v-model="isOpen"/>
+      <Sidebar v-model="isOpen" :key="locale" />
 
-      <main class="app-content" :class="{full: !isOpen}">
+      <main class="app-content" :class="{ full: !isOpen }">
         <div class="app-page">
           <router-view />
         </div>
@@ -40,14 +39,21 @@ export default {
     this.loading = false
   },
   components: {
-    Navbar, Sidebar
+    Navbar,
+    Sidebar
   },
   computed: {
     error() {
       return this.$store.getters.error
+    },
+    locale() {
+      return this.$store.getters.info.locale
     }
   },
   watch: {
+    locale() {
+      console.log('Hello')
+    },
     error(fbError) {
       this.$error(messages[fbError.code] || 'Что-то пошло не так')
     }
@@ -56,10 +62,10 @@ export default {
 </script>
 
 <style>
-  .new-hover {
-    transition: all linear 0.2s;
-  }
-  .new-hover:hover {
-    opacity: 0.8
-  }
+.new-hover {
+  transition: all linear 0.2s;
+}
+.new-hover:hover {
+  opacity: 0.8;
+}
 </style>
