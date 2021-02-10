@@ -4,7 +4,7 @@
       <h3>{{ 'page-name_history' | localize }}</h3>
     </div>
 
-    <div class="history-chart">
+    <div v-show="records.length" class="history-chart">
       <canvas ref="canvas"></canvas>
     </div>
 
