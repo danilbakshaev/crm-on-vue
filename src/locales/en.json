@@ -1,0 +1,12 @@
+{
+  "ProfileTitle": "Profile",
+  "Name": "Name",
+  "Message_EnterName": "Enter name",
+  "Update": "Update",
+  "Menu_Bill": "Bill",
+  "Menu_History": "History",
+  "Menu_Planning": "Planning",
+  "Menu_Record": "Record",
+  "Menu_Categories": "Categories",
+  "Message_dataChangedSuccessfully": "Data changed successfully"
+}
